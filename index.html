@@ -44,12 +44,13 @@
          CharacterPos = -1;
          if (MsgIndex!=MsgArray.length-1){
            MsgIndex++;
+           audio.play();
          }else {
            MsgIndex = 0;
          }
        }
        CharacterPos++;
-       audio.play();
+       
        setTimeout(StartTyping,delay);
    }
 StartTyping();
