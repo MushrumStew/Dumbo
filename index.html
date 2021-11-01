@@ -42,9 +42,10 @@
          delay = NxtMsgDelay;
          MsgBuffer   = "";
          CharacterPos = -1;
+         audio.play();
          if (MsgIndex!=MsgArray.length-1){
            MsgIndex++;
-           audio.play();
+           
          }else {
            MsgIndex = 0;
          }
