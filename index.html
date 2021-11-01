@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<style>
- #typing-text {
+	<title></title>
+	<style type="text/css">#typing-text {
      font-size: 15px;
      padding: 5px;
      height: 30px;
@@ -12,51 +11,12 @@
      resize: none;
      box-sizing: border-box;
 }
-
-</style>
+	</style>
 </head>
-<body>
-<textarea id="typing-text" readonly></textarea>
-
-
+<body style="background-color:black;">
+<h1><span style="color:#FFFFFF;"><span style="font-family:courier new,courier,monospace;">hehevirus</span></span></h1>
 <script>
- var audio = new Audio('https://www.myinstants.com/media/sounds/voice_sans.mp3');
-
-(function () {
-   var CharacterPos = 0;
-   var MsgBuffer = "";
-   var TypeDelay = 100; 
-   var NxtMsgDelay = 1500;
-   var MsgIndex = 0;
-   var delay;
-   var MsgArray = ["Hello Stranger!","You must be here because your an idiot.","Oh well. Anyways please click on this door to uhm, well get out of here."];
-
-   function StartTyping() {
-      var id = document.getElementById("typing-text");
-      if (CharacterPos != MsgArray[MsgIndex].length) {
-         MsgBuffer  = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
-         id.value = MsgBuffer+"_";
-         delay = TypeDelay;
-         id.scrollTop = id.scrollHeight; 
-      } else {
-         delay = NxtMsgDelay;
-         MsgBuffer   = "";
-         CharacterPos = -1;
-         audio.play();
-         if (MsgIndex!=MsgArray.length-1){
-           MsgIndex++;
-           
-         }else {
-           MsgIndex = 0;
-         }
-       }
-       CharacterPos++;
-       
-       setTimeout(StartTyping,delay);
-   }
-StartTyping();
-})();
-</script>
-
-</body>
+ var audio = new Audio('https://www.myinstants.com/media/sounds/you-are-an-idiot__.mp3');
+ audio.play();
+</script></body>
 </html>
