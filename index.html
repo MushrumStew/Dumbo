@@ -4,19 +4,10 @@
 
 <style>
  #typing-text {
-     color: #FFFFFF;
-     border: solid 1px #A8A8A8;
-     font-weight: bold;
-     text-align: left;
-     font-family: Arial, Helvetica, sans-serif;
-     overflow: auto;
-     background-color: #000000;
      font-size: 15px;
      padding: 5px;
      height: 30px;
      width: 500px;
-     transform: rotateX(10deg);
-     transform-origin: 50% 50% 0px;
      outline: none;
      resize: none;
      box-sizing: border-box;
@@ -25,20 +16,20 @@
 </style>
 </head>
 <body>
-<div class="type_box" style="perspective:500px;-webkit-perspective:500px;">
-   <textarea id="typing-text" aria-label="typing text" readonly></textarea>
-</div>
+<textarea id="typing-text" readonly></textarea>
 
 
 <script>
+ var audio = new Audio('https://www.myinstants.com/media/sounds/voice_sans.mp3');
+
 (function () {
    var CharacterPos = 0;
    var MsgBuffer = "";
    var TypeDelay = 100; 
-   var NxtMsgDelay = 1000;
+   var NxtMsgDelay = 1500;
    var MsgIndex = 0;
    var delay;
-   var MsgArray = ["i fucked your mom with a smile"];
+   var MsgArray = ["Hello Stranger!","You must be here because your an idiot.","Oh well. Anyways please click on this door to uhm, well get out of here."];
 
    function StartTyping() {
       var id = document.getElementById("typing-text");
@@ -58,19 +49,12 @@
          }
        }
        CharacterPos++;
+       audio.play();
        setTimeout(StartTyping,delay);
    }
 StartTyping();
 })();
-
-
 </script>
-
-
-<!-- HTML Codes by Quackit.com -->
-<audio src="https://www.myinstants.com/media/sounds/you-are-an-idiot__.mp3" autoplay="autoplay"  loop="loop" id="MusicPlayer">
-<embed src="https://www.myinstants.com/media/sounds/you-are-an-idiot__.mp3" autoplay="true" width="450" height="300" name="MusicPlayer" id="MusicPlayer">
-</audio>
 
 </body>
 </html>
