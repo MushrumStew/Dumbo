@@ -1,3 +1,4 @@
+To Proceed to the Website, Click here: https://mushrumstew.github.io/Dumbo/
 # Dumbo Virus
 
 THIS IS A  JS VIRUS!
