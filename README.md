@@ -1,3 +1,4 @@
+NOTICE: THIS PROJECT IS ON HOLD, SO DON'T TRY TO USE THIS.
 To Proceed to the Website, Click here: https://mushrumstew.github.io/Dumbo/
 # Dumbo Virus
 
